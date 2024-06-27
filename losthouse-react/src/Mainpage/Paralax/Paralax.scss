@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+.parallax-container {
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: smooth; /* Плавная прокрутка */
+  scroll-snap-type: y mandatory; /* Обязательная прокрутка по оси Y */
+  scroll-padding: 0 1000px; /* Отступы для плавной прокрутки */
+}
+
+.parallax-content {
+  position: relative;
+  height: 100vh;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.1s ease-out;
+
+  @for $i from 0 through 3 {
+    &.part-#{$i} {
+      z-index: $i;
+    }
+  }
+}
+.parallax-title {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+    text-align: center;
+  z-index: 2;
+  transition: transform 0.1s ease-out;
+
+  &.fixed {
+    transform: translateY(0);
+  }
+}
+
+.parallax-title h1{
+  font-size: calc(20px + 10vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  margin-bottom: 5px;
+  font-family: "Sacramento", cursive;
+}
+
+.parallax-title h3{
+  font-size: 3vh;
+  margin-top: -5vh;
+  color: #ffffff;
+  color: #dfd6b9;
+  // animation: neon 2s ease-in-out infinite alternate;
+  font-style: italic;
+  font-family: "Comic Sans MS", cursive;
+  text-shadow: 0 0 5px #ffa500aa, 0 0 15px #ffa500aa, 0 0 20px #ffa500aa, 0 0 40px #ffa500aa, 0 0 60px #ff0000aa, 0 0 10px #ff8d00aa, 0 0 98px #ff0000aa;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  }
+  to {
+    text-shadow: 0 0 5px #ffa500aa, 0 0 15px #ffa500aa, 0 0 20px #ffa500aa, 0 0 40px #ffa500aa, 0 0 60px #ff0000aa, 0 0 10px #ff8d00aa, 0 0 98px #ff0000aa;
+  }
+}
