@@ -1,0 +1,9 @@
+.cards-container{
+    position: absolute;
+    display: flex;
+    top: calc(360vh + var(--break-paralax));
+    width: 100vw;
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}

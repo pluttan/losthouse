@@ -1,0 +1,33 @@
+/* BezierCurve.scss */
+.svg-container {
+  position: absolute;
+  top: calc(var(--break-paralax) - 20vh);
+  left: 10vw;
+  padding-bottom: 50px;
+  width: 90vw;
+  height: 340vh;
+  overflow: hidden;
+  svg{
+    width: 110vw;
+  }
+}
+
+path {
+  fill: transparent;
+  stroke: #ffffff4f;
+  stroke-width: 0.4;
+  stroke-dasharray: 1000;
+}
+
+#path2{
+  filter: blur(2px);
+  stroke-width: 1;
+  stroke: aliceblue;
+};
+ellipse{
+  filter: blur(0.2px);
+  stroke-width: 0.5;
+  stroke: #666666;
+  fill: #a5a5e7a0;
+};
+       // style="fill:#000000;fill-opacity:0.855457;stroke:#000000;stroke-width:1.265;stroke-dasharray:none;stroke-opacity:1"

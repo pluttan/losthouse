@@ -1,0 +1,110 @@
+.text{
+    h2{
+        font-size: 3vh;
+        margin: 5vh 2vw;
+        text-shadow: 0 0 20px #000000;
+        span {
+             font-family: "Sacramento", cursive;
+             // font-size: 4vh;
+             font-family: "Comic Sans MS", cursive;
+             font-style: italic;
+             text-shadow: 0 0 5px #ffa500aa, 0 0 15px #ffa500aa, 0 0 20px #ffa500aa, 0 0 40px #ffa500aa, 0 0 60px #ff0000aa, 0 0 10px #ff8d00aa, 0 0 98px #ff0000aa;
+        }
+    }
+}
+.text1{
+    top: var(--break-paralax);
+    left: 70vw;
+    width: 25vw;
+}
+.text2{
+    top: 170vh;
+    top: calc(30vh + var(--break-paralax));
+    left: 7vw;
+    width: 40vw;
+}
+.text3{
+    top: 203vh;
+    top: calc(63vh + var(--break-paralax));
+    left: 23vw;
+    width: 25vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.text4{
+    top: 235vh;
+    top: calc(95vh + var(--break-paralax));
+    left: 1vw;
+    width: 20vw;
+}
+.text5{
+    top: 265vh;
+    top: calc(125vh + var(--break-paralax));
+    left: 20vw;
+    width: 40vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.text6{
+    top: 298vh;
+    top: calc(158vh + var(--break-paralax));
+    left: 27vw;
+    width: 25vw;
+}
+.text7{
+    top: 338vh;
+    top: calc(198vh + var(--break-paralax));
+    left: 60vw;
+    width: 25vw;
+}
+.text8{
+    top: 348vh;
+    top: calc(208vh + var(--break-paralax));
+    left: 3vw;
+    width: 40vw;
+}
+.text9{
+    top: 390vh;
+    top: calc(250vh + var(--break-paralax));
+    left: 23vw;
+    width: 25vw;
+}
+.textModel{
+    top: 90vh;
+    top: calc(-50vh + var(--break-paralax));
+    left: 70vw;
+    width: 15vw;
+}
+.img{
+    background-size: cover;
+    background-position: center;
+}
+.img1{
+    background-image: url("house1.jpg");
+    top: calc(var(--break-paralax) + 25vh);
+    left: 5vw;
+    width: 50vw;
+    height: 34vh;
+}
+.img2{
+    background-image: url("house2.jpg");
+    top: calc(70vh + var(--break-paralax));
+    left: 38vw;
+    width: 57vw;
+    height: 80vh;
+}
+.img3{
+    background-image: url("house3.jpg");
+    top: calc(var(--break-paralax) + 160vh);
+    left: 3vw;
+    width: 40vw;
+    height: 50vh;
+
+}
+.img4{
+    background-image: url("house4.jpg");
+    top: calc(225vh + var(--break-paralax));
+    left: 44vw;
+    width: 50vw;
+    height: 30vh;
+}

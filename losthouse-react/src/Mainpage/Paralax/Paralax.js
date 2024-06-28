@@ -1,22 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "./Paralax.scss";
 
-const Paralax = () => {
-  const [offsetY, setOffsetY] = useState(0);
+const Paralax = ({offsetY}) => {
 
-  const handleScroll = () => {
-    requestAnimationFrame(() => {
-      setOffsetY(window.pageYOffset/1.2);
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const k = 200;
 
@@ -31,7 +17,7 @@ const Paralax = () => {
     getParallaxStyle(0.09, k / 0.09),
   ];
 
-  return (
+  return (<div>
     <div className="parallax-container">
       <div className="parallax-content">
         {[5, 4, 2, 1].map((part, index) => (
@@ -43,7 +29,6 @@ const Paralax = () => {
             style={styles[index]}
           />
         ))}
-        <div className="gradient-overlay" />
       </div>
       <div
         className={`parallax-title ${offsetY > 800 ? 'fixed' : ''}`}
@@ -54,6 +39,8 @@ const Paralax = () => {
         </h1>
         <h3>Место, где хочется жить</h3>
       </div>
+    </div>
+      <div className="gradient-overlay" />
     </div>
   );
 };

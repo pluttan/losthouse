@@ -1,20 +1,14 @@
 .sketchfab-embed-wrapper{
-    width: 80vh;
-    height: 60vh;
-    position: absolute;
-    left: 5vh;
-    top: 140vh;
+    width: 80vw;
+    height: 80vh;
+    left: 10vw;
+    top: calc(290vh + var(--break-paralax));
     overflow: hidden; 
-    display: flex;
-    justify-content: center; /* Выравнивание по горизонтали */
-    align-items: center;
-    border: 0.6px solid #333;
-    border-radius: 10px;
+    flex-direction: row;
 }
 
 .house{
-    width: 80vh;
-    height: 71vh;
-    background-color: #0F0F2F3a;
-    border-radius: 10px;
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden; 
 }
